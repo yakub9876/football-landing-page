@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /*-----------------------------------*\
-            default css 
+            common css 
 /*-----------------------------------*/
 body {
   margin: 0;
@@ -233,6 +233,7 @@ main {
   }
   .hightlights-text {
     margin-bottom: 40px;
+    padding-right: 0;
   }
   .footer-logo {
     width: 300px;
