@@ -27,16 +27,19 @@ h1 {
   font-size: 64px;
   line-height: 80px;
   color: #ffffff;
+  margin: 0 0 30px;
 }
 h2 {
   font-size: 48px;
   line-height: 60px;
   color: #0a0826;
+  margin: 0 0 10px;
 }
 h3 {
   font-size: 28px;
   line-height: 40px;
   color: #18191f;
+  margin: 16px 0 10px;
 }
 p {
   font-family: Poppins;
@@ -45,6 +48,7 @@ p {
   font-size: 16px;
   line-height: 26px;
   color: #6c6c6c;
+  margin: 0 0 30px;
 }
 a {
   text-decoration: none;
@@ -196,9 +200,9 @@ main {
 /*-----------------------------------*/
 
 /* Small devices ( phones) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 767px) {
   .container {
-    width: 100%;
+    max-width: 100%;
     padding: 0 15px;
   }
   .hero-area {
@@ -216,24 +220,41 @@ main {
     margin-top: 60px;
   }
   .players {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
   }
   .hightlights-contant {
     display: flex;
     flex-direction: column;
   }
+  .hightlights-text h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hightlights-text {
+    margin-bottom: 40px;
+  }
+  .footer-logo {
+    width: 300px;
+  }
 }
 
 /* Medium devices ( tablets ) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 992px) {
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+  }
+  .players {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
