@@ -70,6 +70,7 @@ main {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 .btn {
   padding: 10px 48px 10px 24px;
@@ -203,7 +204,6 @@ main {
 @media (max-width: 767px) {
   .container {
     max-width: 100%;
-    padding: 0 15px;
   }
   .hero-area {
     padding: 110px 0 60px;
@@ -252,7 +252,6 @@ main {
 @media (min-width: 992px) {
   .container {
     max-width: 1170px;
-    padding: 0 15px;
   }
   .players {
     grid-template-columns: repeat(3, 1fr);
